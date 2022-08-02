@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-image: url("./images/background.jpg");
+ background-position: top;
+ background-attachment: fixed;
+ /*background-color: #11242C; */
+}
+.nav{
+    background-color: #3B3A57;
+}
+
+.content{
+    width: 60%;
+    padding: 6rem 2rem;
+}
+.content span{
+    margin-top: 2rem;
+    font-weight: 700;
+    padding: 2rem;
+}
+.content p{
+    padding: 2rem;
+    line-height: 1.6rem;
+}
+.content .btn{
+    margin: 0 2rem;
+    font-weight: 500;
+}
+
+.calc{
+    width: 29%;
+    background-color: rgb(4, 23, 44);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.calc .display{
+    background-color: #D9D9D9;
+    width: 100%;
+    border-radius: .5rem;
+    height: 7rem;
+    padding: .5rem;
+}
+.calc .btns{
+    /*background-color: rgb(24, 71, 112);*/
+    width: 100%;
+    border-radius: .5rem;
+    height: 20rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem 2rem;
+    
+}
+.calc .btns .upperbtn{
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+   
+
+}
+.calc .btns .upbtn{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .3rem;
+    background-color: #D9D9D9;
+    text-align: center;
+    border-radius: .3rem;
+    padding: .4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.calc .btns .lowerbtn{
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+}
+.eq{
+    
+}
+.calc .btns .lowbtn{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .3rem;
+    color: white;
+    text-align: center;
+    border-radius: .3rem;
+    padding: .5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.calc .btns .lowbtn:hover{
+    background-color:lightgray;
+    color:black;
+}
+
+.calc .display input{
+    border: none;
+    height: 3rem;
+    width: 100%;
+    outline: none;
+    text-align:right;
+    padding: 1rem 2rem;
+}
+
+#input{
+   
+    text-align:right;
+    font-weight:700;
+    font-size: 1.6rem;
+    font-family: monospace;
+}
