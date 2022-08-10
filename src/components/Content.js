@@ -62,7 +62,7 @@ const Content = () => {
                 <div className="display">
                     <form action="" method="post">
                     <input type="text" id="input" name="input" value={input}/><br/>
-                    <div className="answer text-green-600"> {result} </div>
+                    <div className="answer text-green-600"> = {result} </div>
                     </form>
                 </div>
             <div className="btns">

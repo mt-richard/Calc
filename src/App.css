@@ -139,6 +139,7 @@ body{
     font-family: monospace;
     transform: right bottom;
     transition: transform 0.2s ease;
+    
 }
 
 
@@ -167,22 +168,22 @@ body{
     }
     .calc .btns .lowerbtn{
         display: grid;
-        grid-template-columns: repeat(4, 3rem);
+        grid-template-columns: repeat(4, 3.4rem);
     }
     .calc .btns .upperbtn{
         display: grid;
-        grid-template-columns: repeat(4, 3rem);
+        grid-template-columns: repeat(4, 3.4rem);
     }
     .calc .btns{
         padding: 0rem .6rem; 
     }
     .btneq{
-        width: 7rem;
-        margin-left:1.8rem;
+        width: 7.4rem;
+        margin-left:2rem;
         font-weight: 700;
         cursor: pointer;
     }
     .links{
-        background-color: rgb(88, 85, 120);
+        background-color: #3B3A57;
     }
 }
