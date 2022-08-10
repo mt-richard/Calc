@@ -35,6 +35,7 @@ body{
     background-color: rgb(4, 23, 44);
     border-radius: 1rem;
     padding: 2rem;
+   
 }
 .calc .display{
     background-color: #D9D9D9;
@@ -138,4 +139,50 @@ body{
     font-family: monospace;
     transform: right bottom;
     transition: transform 0.2s ease;
+}
+
+
+
+
+@media (max-width:450px)  {
+    .allcont{
+        display: block;
+        width: 100%;
+        padding: 0rem;
+    }
+    .allcont .content{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .allcont .content .head{
+        font-size: 1.3rem;
+    }
+    .allcont .content p{
+        font-size: .9rem;
+    }
+    .allcont .calc{
+        width: 90%;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .calc .btns .lowerbtn{
+        display: grid;
+        grid-template-columns: repeat(4, 3rem);
+    }
+    .calc .btns .upperbtn{
+        display: grid;
+        grid-template-columns: repeat(4, 3rem);
+    }
+    .calc .btns{
+        padding: 0rem .6rem; 
+    }
+    .btneq{
+        width: 7rem;
+        margin-left:1.8rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .links{
+        background-color: rgb(88, 85, 120);
+    }
 }

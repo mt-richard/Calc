@@ -4,35 +4,44 @@ const Content = () => {
 
 
                 
-                const [result, setResult]=useState("");
+                const [result, setResult]=useState("0");
+                const [input, setInput]=useState("");
                 const myadd = (e) => {
-                    setResult(result.concat(e.target.name));
+                    setInput(input.concat(e.target.name));
                 }
                     /* inp.value='Hello'; */
                 const clean = () => {
-                    setResult("");
+                    setInput("");
+                    setResult("0");
                 }
                 const backspace = () => {
-                    setResult(result.slice(0, -1))
+                    setInput(input.slice(0, -1))
                 }
                 const squareroot = () => {
-                    setResult(Math.sqrt(result).toString());
+                    setResult(Math.sqrt(input).toString());
                 }
                 const squared = () => {
-                    setResult(Math.pow(result, 2).toString());
+                    setResult(Math.pow(input, 2).toString());
                 }
                 const exponent = () => {
-                    setResult(eval(result ^ result).toString());
+                    var name = prompt("Enter a number");
+                    if (name === null || name === ""){
+                      let  txt = "No input entered";
+                    }else {
+                       let txt = "hello, " + name + "!";
+                    }
+                    console.log(name);
+                    setResult(Math.pow(input, name).toString()); 
                 }
                 const oneover = () => {
-                    setResult(eval(1 / result).toString());
+                    setResult(eval(1 / input).toString());
                 }
                 const percentage = () => {
-                    setResult(eval(result / 100).toString());
+                    setResult(eval(input / 100).toString());
                 }
                 const calculate = () => {
                     try {
-                     setResult(eval(result).toString());
+                        setResult(eval(input).toString());
                     } catch (error) {
                         setResult("Error");
                     }
@@ -42,7 +51,7 @@ const Content = () => {
 
 
     return ( 
-        <div className="w-100 flex  px-10 py-10 ">
+        <div className="allcont w-100 flex  px-10 py-10  ">
             <div className="content  text-white">
                 <span class="text-3xl head ">Calculator Web App</span>
                 <p>Calculator.net's sole focus is to provide fast, comprehensive, convenient, free online calculators in a plethora of areas. Currently, we have around 200 calculators to help you "do the math" quickly in areas such as finance, fitness, health, math, and others, and we are still developing more. Our goal is to become the one-stop, go-to site for people who need to make quick calculations. Additionally, we believe the internet should be a source of free information. Therefore, all of our tools and services are completely free, with no registration required.             </p>
@@ -52,8 +61,8 @@ const Content = () => {
             
                 <div className="display">
                     <form action="" method="post">
-                    <input type="text" id="input" name="input" value={result}/><br/>
-                    <div className="answer text-green-600"> 9999 </div>
+                    <input type="text" id="input" name="input" value={input}/><br/>
+                    <div className="answer text-green-600"> {result} </div>
                     </form>
                 </div>
             <div className="btns">

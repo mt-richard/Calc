@@ -20,7 +20,7 @@ const Nav = () => {
                         <ion-icon name={open ? 'close':'menu'}></ion-icon>
                         </div>
                         
-                    <ul className={`md:flex md:items-center px-12 md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0  w-full md:w-auto ${open ? 'top-20 opacity-100 bg-gray-600':'top-[-490px] opacity-100 '}`}>
+                    <ul className={`links md:flex md:items-center px-12 md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0  w-full md:w-auto ${open ? 'top-20 opacity-100':'top-[-490px] opacity-100 '}`}>
                         { links.map((e) =>(
                             <li key ={e.name} className="md:my-0 my-3 md:ml-12 hover:text-green-400">
                             <a className="" href="{e.link}">{e.name}</a>
