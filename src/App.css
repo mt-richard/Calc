@@ -12,6 +12,10 @@ body{
     background-color: #3B3A57;
 }
 
+.allcont{
+    padding: 2rem 0;
+}
+
 .content{
     width: 60%;
     padding: 6rem 2rem;
@@ -34,7 +38,7 @@ body{
     width: 29%;
     background-color: rgb(4, 23, 44);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
    
 }
 .calc .display{
@@ -141,6 +145,15 @@ body{
     transition: transform 0.2s ease;
     
 }
+.footer{
+    font-weight: 400;
+    border-top: .1rem solid #3B3A57;
+    letter-spacing: .2rem;
+}
+.footer .owner{
+    color: rgb(62, 161, 62);
+    font-weight: 400;
+}
 
 
 
@@ -168,22 +181,26 @@ body{
     }
     .calc .btns .lowerbtn{
         display: grid;
-        grid-template-columns: repeat(4, 3.4rem);
+        grid-template-columns: repeat(4, 4rem);
     }
     .calc .btns .upperbtn{
         display: grid;
-        grid-template-columns: repeat(4, 3.4rem);
+        grid-template-columns: repeat(4, 4rem);
     }
     .calc .btns{
-        padding: 0rem .6rem; 
+        padding: 0rem 1.5rem; 
     }
     .btneq{
-        width: 7.4rem;
-        margin-left:2rem;
+        width: 10rem;
+        margin-left:.91rem;
         font-weight: 700;
         cursor: pointer;
     }
     .links{
         background-color: #3B3A57;
+    }
+    .footer{
+        font-weight: 100;
+        letter-spacing: .1rem;
     }
 }

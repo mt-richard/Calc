@@ -24,11 +24,9 @@ const Content = () => {
                     setResult(Math.pow(input, 2).toString());
                 }
                 const exponent = () => {
-                    var name = prompt("Enter a number");
+                    var name = prompt("Enter a number to be powered to " + input );
                     if (name === null || name === ""){
-                      let  txt = "No input entered";
-                    }else {
-                       let txt = "hello, " + name + "!";
+                      alert("No input entered");
                     }
                     console.log(name);
                     setResult(Math.pow(input, name).toString()); 
@@ -55,9 +53,9 @@ const Content = () => {
             <div className="content  text-white">
                 <span class="text-3xl head ">Calculator Web App</span>
                 <p>Calculator.net's sole focus is to provide fast, comprehensive, convenient, free online calculators in a plethora of areas. Currently, we have around 200 calculators to help you "do the math" quickly in areas such as finance, fitness, health, math, and others, and we are still developing more. Our goal is to become the one-stop, go-to site for people who need to make quick calculations. Additionally, we believe the internet should be a source of free information. Therefore, all of our tools and services are completely free, with no registration required.             </p>
-                <button className="btn rounded py-1 px-5 bg-green-600">Get Started</button>
+                <button href="#calc" className="btn rounded py-1 px-5 bg-green-600">Get Started</button>
             </div>
-            <div className="calc">
+            <div className="calc" id="calc">
             
                 <div className="display">
                     <form action="" method="post">
