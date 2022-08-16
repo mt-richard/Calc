@@ -1,11 +1,12 @@
 import { useState } from "react";
+import About from "../pages/About";
 
 const Nav = () => {
 
     let links =[
-        {name:"Home",link:"#"},
-        {name:"About Us",link:"/"},
-        {name:"Contact",link:"/"}
+        {name:"Home",link:"/"},
+        {name:"About Us",link:"/about"},
+        {name:"Contact",link:"/contact"}
         
     ];
     let [open,setOpen]=useState(false);
@@ -23,7 +24,7 @@ const Nav = () => {
                     <ul className={`links md:flex md:items-center px-12 md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0  w-full md:w-auto ${open ? 'top-20 opacity-100':'top-[-490px] opacity-100 '}`}>
                         { links.map((e) =>(
                             <li key ={e.name} className="md:my-0 my-3 md:ml-12 hover:text-green-400">
-                            <a className="" href="{e.link}">{e.name}</a>
+                            <a className="" href={e.link}>{e.name}</a>
                             </li>
                             ))
                         }

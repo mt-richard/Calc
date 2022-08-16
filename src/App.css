@@ -55,6 +55,7 @@ body{
     height: 20rem;
     margin-top: 1rem;
     padding: 0rem 2rem;
+    position: inherit;
     
 }
 .calc .btns .upperbtn{
@@ -148,14 +149,37 @@ body{
 .footer{
     font-weight: 400;
     border-top: .1rem solid #3B3A57;
-    letter-spacing: .2rem;
+
 }
 .footer .owner{
     color: rgb(62, 161, 62);
     font-weight: 400;
 }
 
+.cont{
+    background-image: url("./images/contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10rem;
+    background-attachment: fixed;
 
+}
+.form{
+    width: 250px;
+}
+.para{
+    line-height: 2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.about{
+    background-image: url("./images/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 10rem;
+    background-attachment: fixed;
+    
+}
 
 
 @media (max-width:450px)  {
@@ -202,5 +226,25 @@ body{
     .footer{
         font-weight: 100;
         letter-spacing: .1rem;
+    }
+
+    .contact {
+        display: block;
+        width: 100%;
+            }
+    .cont{
+        margin: 0;
+        padding: 0;
+    }
+    .cont .head2{
+        margin: 0;
+        padding: 2rem 0;
+    }
+    .cont .form{
+        padding: 2rem 0;
+    }
+    .about{
+        padding:0 4rem;
+        text-align: center;
     }
 }
