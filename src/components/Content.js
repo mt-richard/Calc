@@ -52,7 +52,7 @@ const Content = () => {
         <div className="allcont w-100 flex  px-10 py-10  ">
             <div className="content  text-white">
                 <span class="text-3xl head ">Calculator Web App</span>
-                <p>Calculator.net's sole focus is to provide fast, comprehensive, convenient, free online calculators in a plethora of areas. Currently, we have around 200 calculators to help you "do the math" quickly in areas such as finance, fitness, health, math, and others, and we are still developing more. Our goal is to become the one-stop, go-to site for people who need to make quick calculations. Additionally, we believe the internet should be a source of free information. Therefore, all of our tools and services are completely free, with no registration required.             </p>
+                <p className="homepara">Calculator.net's sole focus is to provide fast, comprehensive, convenient, free online calculators in a plethora of areas. Currently, we have around 200 calculators to help you "do the math" quickly in areas such as finance, fitness, health, math, and others, and we are still developing more. Our goal is to become the one-stop, go-to site for people who need to make quick calculations. Additionally, we believe the internet should be a source of free information. Therefore, all of our tools and services are completely free, with no registration required.             </p>
                 <button href="#calc" className="btn rounded py-1 px-5 bg-green-600">Get Started</button>
             </div>
             <div className="calc" id="calc">
